@@ -1,0 +1,23 @@
+:root {
+  --bg0:#0a0c10; --bg1:#0f1318; --bg2:#141920; --bg3:#1a2130;
+  --border:#1e2d42; --border2:#243348;
+  --red:#ff3b5c;   --redbg:rgba(255,59,92,.08);
+  --amber:#f5a623; --amberbg:rgba(245,166,35,.08);
+  --green:#00e5a0; --greenbg:rgba(0,229,160,.08);
+  --blue:#2196f3;  --bluebg:rgba(33,150,243,.08);
+  --cyan:#00d4ff;  --cyanbg:rgba(0,212,255,.07);
+  --purple:#a855f7;--purplebg:rgba(168,85,247,.08);
+  --text1:#e8edf5; --text2:#8a9ab5; --text3:#4a5a72;
+  --font:'Rajdhani',sans-serif; --mono:'Share Tech Mono',monospace;
+  --header-h:52px; --sidebar-w:220px; --sidebar-collapsed:56px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body,#app{height:100%;background:var(--bg0);color:var(--text1);font-family:var(--font);font-size:14px;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes slideIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.fade-enter-active,.fade-leave-active{transition:opacity .18s ease}
+.fade-enter-from,.fade-leave-to{opacity:0}
+.slide-up-enter-active{animation:slideIn .22s ease}
